@@ -1,0 +1,212 @@
+{
+  "game_name": "示例游戏",
+  "game_name_en": "Example Game",
+  "subtitle": "运营情况深度分析报告",
+  "date_text": "截至 2026年9月20日",
+  "footer_text": "示例游戏 · 运营分析报告",
+  "theme": {
+    "primary": "#2B5F88",
+    "accent": "#4A90D9",
+    "light": "#E8F0F8",
+    "bg": "#F0F5FA",
+    "dark": "#1a4477"
+  },
+  "nav_items": [
+    {"target": "#ch1", "label": "背景"},
+    {"target": "#ch2", "label": "概况"},
+    {"target": "#ch3", "label": "用户规模"},
+    {"target": "#ch4", "label": "商业化"},
+    {"target": "#ch5", "label": "付费系统"},
+    {"target": "#ch6", "label": "竞品对比"},
+    {"target": "#ch7", "label": "结论"}
+  ],
+  "hero_stats": [
+    {"value": "500万+", "label": "当前DAU（估算）"},
+    {"value": "4", "label": "已完成赛季数"},
+    {"value": "30元", "label": "月卡起步价"},
+    {"value": "400+", "label": "可收集内容数"}
+  ],
+  "chapters": [
+    {
+      "chapter_id": "ch1",
+      "number": "第一章",
+      "title": "研究背景与方法论",
+      "description": "研究目标、数据来源与分析框架",
+      "intro": "本报告旨在对游戏自公测以来的运营情况进行系统性回顾与分析。",
+      "bg_section": false,
+      "sections": [
+        {"title": "1.1 研究背景", "body": "游戏于2026年3月26日开启公测，成为年度最受关注的新作之一。"},
+        {"title": "1.2 数据来源", "body": "本报告综合了官方信源、玩家社区反馈和第三方数据。"}
+      ],
+      "data_cards": [
+        {"label": "官方信源", "value": "12+", "desc": "游戏官网、官方公告等"},
+        {"label": "社区样本", "value": "200", "desc": "小红书100条 + B站100条"},
+        {"label": "第三方数据", "value": "5+", "desc": "七麦数据、Sensor Tower等"}
+      ]
+    },
+    {
+      "chapter_id": "ch2",
+      "number": "第二章",
+      "title": "游戏概况与市场定位",
+      "description": "产品定位、核心玩法与目标用户画像",
+      "intro": "本章对游戏的产品基本信息和核心玩法系统进行概述。",
+      "bg_section": true,
+      "tables": [
+        {
+          "headers": ["项目", "内容"],
+          "rows": [
+            ["游戏名称", "示例游戏"],
+            ["游戏类型", "开放世界"],
+            ["公测日期", "2026年3月26日"],
+            ["收费模式", "免费下载 + 内购"]
+          ]
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch3",
+      "number": "第三章",
+      "title": "用户规模演变与DAU分析",
+      "description": "公测至今的用户规模变化趋势与阶段性特征",
+      "intro": "本章基于第三方数据平台的公开估算，对DAU演变趋势进行分阶段分析。",
+      "bg_section": false,
+      "charts": [
+        {
+          "chart_id": "dau_trend",
+          "chart_type": "line",
+          "title": "图3-1：DAU演变趋势（估算）",
+          "note": "注：本图基于公开报道和第三方数据的估算趋势图",
+          "labels": ["3月", "4月", "5月", "6月", "7月", "8月", "9月"],
+          "datasets": [{
+            "label": "DAU（万人）",
+            "data": [1300, 900, 750, 520, 560, 580, 600],
+            "fill": true
+          }],
+          "options": {
+            "scales": {
+              "y": {"beginAtZero": true, "title": {"display": true, "text": "DAU（万人）"}},
+              "x": {"title": {"display": true, "text": "月份"}}
+            }
+          }
+        }
+      ],
+      "data_cards": [
+        {"label": "阶段一", "value": "~1300万", "desc": "公测首日峰值"},
+        {"label": "阶段二", "value": "700-900万", "desc": "自然回落期"},
+        {"label": "阶段三", "value": "~500万", "desc": "事故冲击后低点"},
+        {"label": "阶段四", "value": "500-650万", "desc": "平稳运行期"}
+      ],
+      "callouts": [
+        {"title": "分析观点", "content": "DAU从峰值到稳定区间的降幅在手游产品中属于偏高水平，需关注留存策略优化。", "style": "info"}
+      ]
+    },
+    {
+      "chapter_id": "ch4",
+      "number": "第四章",
+      "title": "商业化架构概述",
+      "description": "付费体系整体框架与收费项目概览",
+      "intro": "游戏采用免费下载+内购的收费模式，以月卡和赛季通行证为核心支柱。",
+      "bg_section": true,
+      "pricing_cards": [
+        {
+          "price": "30", "price_unit": "元/月", "note": "月卡",
+          "items": ["立即获得300货币", "30天累计4500资源", "效率提升30%"]
+        },
+        {
+          "price": "68", "price_unit": "元", "note": "基础通行证（拼单54元）",
+          "items": ["限定内容A", "限定内容B", "时装两套", "免体力券12张"]
+        },
+        {
+          "price": "128", "price_unit": "元", "note": "豪华通行证（拼单104元）",
+          "featured": true, "badge": "豪华版",
+          "items": ["包含基础版全部", "额外限定内容", "专属头像", "立升10级"]
+        },
+        {
+          "price": "18", "price_unit": "元", "note": "赛季助力礼包（限购1次）",
+          "items": ["赛季限定道具×1", "材料×12", "粉尘×100"]
+        }
+      ],
+      "charts": [
+        {
+          "chart_id": "pricing_compare",
+          "chart_type": "bar",
+          "title": "图4-1：通行证拼单价格对比",
+          "note": "注：单人购买与2人拼单的人均价格对比",
+          "labels": ["基础通行证", "豪华通行证"],
+          "datasets": [
+            {"label": "单人购买（元）", "data": [68, 128]},
+            {"label": "2人拼单人均（元）", "data": [54, 104]}
+          ],
+          "options": {
+            "scales": {"y": {"beginAtZero": true, "title": {"display": true, "text": "价格（元）"}}}
+          }
+        }
+      ]
+    },
+    {
+      "chapter_id": "ch5",
+      "number": "第五章",
+      "title": "付费系统深度分析",
+      "description": "基于游戏内实际内容的付费体系拆解",
+      "intro": "本章基于游戏内付费项目的实际内容，对付费系统进行详细拆解。",
+      "bg_section": false,
+      "accordion_items": [
+        {"title": "问题一：限定内容的付费唯一性争议", "content": "部分限定内容仅可通过豪华通行证获取，引发了核心收集用户的讨论。", "active": true},
+        {"title": "问题二：关键道具获取渠道有限", "content": "关键道具的获取渠道产出总量有限，对追求全收集的玩家形成资源焦虑。", "active": false},
+        {"title": "问题三：赛季内容到期清零的FOMO压力", "content": "赛季限定内容在赛季结束后清零，对玩家形成错过即永久失去的压力。", "active": false}
+      ],
+      "callouts": [
+        {"title": "关键事实", "content": "游戏官方强调所有核心内容均可通过玩法免费获取，付费项目主要提供便利性和外观定制。", "style": "info"},
+        {"title": "设计亮点", "content": "通行证副券拼单机制兼顾了社交裂变与付费转化，是商业化设计中的良性机制。", "style": "success"}
+      ]
+    },
+    {
+      "chapter_id": "ch6",
+      "number": "第六章",
+      "title": "竞品对比分析",
+      "description": "与同类产品的多维度对比",
+      "intro": "本章将本游戏与三款具有竞争关系的作品进行对比分析。",
+      "bg_section": true,
+      "charts": [
+        {
+          "chart_id": "radar_compare",
+          "chart_type": "radar",
+          "title": "图6-1：竞品多维度对比雷达图",
+          "note": "注：基于公开信息的定性评估，5分为最高",
+          "labels": ["付费友好度", "内容深度", "开放世界体验", "社交生态", "IP情感连接", "更新频率"],
+          "datasets": [
+            {"label": "本游戏", "data": [4, 5, 4, 5, 5, 4]},
+            {"label": "竞品A", "data": [4, 4, 2, 3, 2, 3]},
+            {"label": "竞品B", "data": [3, 2, 5, 3, 3, 3]},
+            {"label": "竞品C", "data": [3, 4, 4, 4, 5, 5]}
+          ],
+          "options": {
+            "scales": {"r": {"beginAtZero": true, "max": 5, "ticks": {"stepSize": 1}}}
+          }
+        }
+      ],
+      "callouts": [
+        {"title": "竞争策略建议", "content": "建议在IP深度、社交生态和收集壁垒三个维度持续巩固差异化优势。", "style": "info"}
+      ]
+    },
+    {
+      "chapter_id": "ch7",
+      "number": "第七章",
+      "title": "结论",
+      "description": "研究总结与核心发现",
+      "intro": "本报告对游戏运营情况进行了系统性分析，得出以下核心结论。",
+      "bg_section": false,
+      "data_cards": [
+        {"label": "发现一", "value": "61.5%", "desc": "DAU降幅高于品类平均"},
+        {"label": "发现二", "value": "30元", "desc": "月卡起步，付费结构友好"},
+        {"label": "发现三", "value": "55天", "desc": "标准赛季周期，产能稳定"},
+        {"label": "发现四", "value": ">4月", "desc": "事故信任修复周期长"}
+      ]
+    }
+  ],
+  "references": [
+    {"title": "游戏官方网站", "url": "https://example.com"},
+    {"title": "官方公告与版本说明", "url": "https://example.com/announce"},
+    {"title": "第三方数据平台", "url": "https://example.com/data"}
+  ]
+}
